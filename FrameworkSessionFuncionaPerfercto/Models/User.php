@@ -33,9 +33,7 @@ class User{
         return $this;
     }
 
-   /**
-    * Get the value of PASSWORD
-    */ 
+
    public function getPASSWORD()
    {
       return $this->PASSWORD;

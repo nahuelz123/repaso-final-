@@ -2,10 +2,31 @@
 
 namespace Controllers;
 
+use DAO\BooksDAO;
+use DAO\UsersDAO as UsersDAO;
+
 class HomeController
 {
-    public function Index($message = "")
+    public function __construct()
     {
-        require_once(VIEWS_PATH . "index.php");
+
+        $this->userDAO = new UsersDAO();
+        $this->booksDAO = new BooksDAO();
+    }
+    public function Index()
+    {
+       
+        if (isset($_SESSION['email'])) {
+            $userList = $this->userDAO->GetAll();
+            $booksList = $this->booksDAO->GetAll();
+            foreach ($userList as $user) {
+                if ($_SESSION['email'] == $user->getEmail()) {
+                    $booksList;
+                    require_once(VIEWS_PATH . "book-list.php");
+                }
+            }
+        } else {
+            require_once(VIEWS_PATH . "index.php");
+        }
     }
 }

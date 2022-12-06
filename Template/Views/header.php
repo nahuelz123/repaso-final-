@@ -1,3 +1,16 @@
+<?php 
+
+if (isset($_SESSION['email']))
+{
+     
+          require_once(VIEWS_PATH . "nav.php");
+     
+}else 
+{
+     require_once(VIEWS_PATH . "index.php");
+}
+  
+?>
 <!doctype html>
 <html lang="en">
 

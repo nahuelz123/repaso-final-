@@ -11,20 +11,20 @@
                     <div class="row">
                          <div class="col-lg-4">
                               <div class="form-group">
-                                   <label for="Codigo">Codigo</label>
-                                   <input type="number" name="code" value="" required class="form-control">
+                                   <label for="code">Codigo</label>
+                                   <input type="number" name="code" id="code" value="" required class="form-control">
                               </div>
                          </div>
                          <div class="col-lg-4">
                               <div class="form-group">
                                    <label for="title">Titulo</label>
-                                   <input type="text" name="title" value="" required class="form-control">
+                                   <input type="text" name="title" id="title" value="" required class="form-control">
                               </div>
                          </div>
                          <div class="col-lg-4">
                               <div class="form-group">
                                    <label for="price">Precio</label>
-                                   <input type="number" name="price" value=""  required class="form-control">
+                                   <input type="number" name="price" id="price" value=""  required class="form-control">
                               </div>
                          </div>
                     </div>

@@ -4,13 +4,13 @@
      </span>
      <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-               <a class="nav-link" href="">Agregar Book</a>
+               <a class="nav-link" href="<?php echo FRONT_ROOT ?>Books/ShowAddView">Agregar Book</a>
           </li>
           <li class="nav-item">
-               <a class="nav-link" href="">Listar Books</a>
+               <a class="nav-link" href="<?php echo FRONT_ROOT ?>Books/ShowListView">Listar Books</a>
           </li>
           <li class="nav-item">
-               <a class="nav-link" href="">Logout</a>
+          <a class="nav-link" href="<?php echo FRONT_ROOT ?>Session/logout">cerrar sesion</a>
           </li>
      </ul>
 </nav>

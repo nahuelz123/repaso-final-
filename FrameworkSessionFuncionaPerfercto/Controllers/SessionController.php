@@ -26,7 +26,7 @@ class SessionController
         if ($password == $user->getPassword()) {
 
           $_SESSION['email'] = $email;
-
+            
           header("location: ../Books/ShowListView");
         } else {
           echo "<script> if(confirm('password incorrecta !'));";
